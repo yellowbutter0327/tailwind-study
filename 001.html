@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sizing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- https://tailwindcss.com/docs/width -->
+    <!-- space-y-8 : 각 요소의 간격 -->
+    <!-- space-y : 수직 방향(세로)로 간격 설정, 요소들 사이에만 적용되고 첫 번째 자식요소 상단이나 마지막 자식 하단에는 간격 추가 x -->
+    <!-- bg-red-200 : red color 숫자가 높아질수록 진해짐 -->
+    <!-- shadow : 그림자, rounded : radius -->
+    <!-- w-0 : 0px, w-0.5: 0.125rem, w-1:0.25rem; w-4:1rem;-->
+    <!-- 
+        w-96 : 96%나 96px이 아님, 0.25rem*96임
+    -->
+    <!-- w-full : width: 100% / w-screen: width: 100vw / w-max: width: max-content -->
+    <h1>hello world</h1>
+    <h2>hello world</h2>
+    <h3>hello world</h3>
+    <h4>hello world</h4>
+    <h5>hello world</h5>
+    <h6>hello world</h6>
+    <div class="space-y-8 bg-blue-400">
+        <div class="w-96 bg-white shadow rounded">
+            w-96
+        </div>
+        <div class="w-80 bg-white shadow rounded">
+            w-80
+        </div>
+        <div class="w-72 bg-white shadow rounded">
+            w-72
+        </div>
+        <div class="w-64 bg-white shadow rounded">
+            w-64
+        </div>
+        <div class="w-60 bg-white shadow rounded">
+            w-60
+        </div>
+        <div class="w-56 bg-white shadow rounded">
+            w-56
+        </div>
+        <div class="w-52 bg-white shadow rounded">
+            w-52
+        </div>
+        <div class="w-48 bg-white shadow rounded">
+            w-48
+        </div>
+        <!-- 부모 너비의 2/4 -->
+        <div class="w-2/4 bg-white shadow rounded">
+            w-48
+        </div>
+    </div>
+</body>
+
+</html>
