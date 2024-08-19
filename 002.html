@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindcss</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- https://tailwindcss.com/docs/height -->
+    <!-- 
+        h-0 : 0px
+        h-px : 1px
+        h-0.5: 0.125rem
+        h-4: 1rem
+        h-10 :2.5rem
+        h-1/2 : 50%
+        h-full: 100%
+        h-screen: 100vh
+        h-svh: 100svh (주소 표시줄이 없어져도 기존 주소표시줄의 높이 값을 뺀 나머지 값을 가져온다.)
+        h-lvh: 1001vh (주소 표시줄이 있더라도 주소 표시줄이 없을 때의 총 화면의 길이를 가져온다.)
+        (dvh는 주소 표시줄이 스크롤을 통해 축소가 되건 노출이 되고 있건 상관 없이 현재 보여지는 뷰포트 높이를 동적으로 가져온다.)
+        h-dvh: 100dvh
+        뷰포트 높이의 100%로 설정(동적일때)
+    -->
+    <div class="h-screen">
+        <div class="w-100 h-0 bg-red shadow">
+            h-0
+        </div>
+        <div class="w-100 h-8 bg-indigo-500">
+            h-8
+        </div>
+        <div class="w-100 h-10 bg-red-500">
+            h-1
+        </div>
+        <div class="h-1/2 bg-blue-400">
+            h-1/3
+        </div>
+        <div class="h-1/3 bg-indigo-300">
+            h-1/2
+        </div>
+        <div class="w-100 h-full bg-red-300 shadow rounded">
+            h-full
+        </div>
+    </div>
+</body>
+
+</html>
